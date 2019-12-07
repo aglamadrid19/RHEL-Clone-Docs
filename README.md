@@ -8,7 +8,7 @@ This Git Repository contains the steps and documentation to succesfuly clone RHE
 [Virt-Sysprep Official Docs](http://libguestfs.org/virt-sysprep.1.html)
 
 ### Summary
-The reason why we would use virt-sysprep (or similar tools) is to automate most of the process after we clone a Linux VM to build new server. A good example is the MAC address, everytime we provision a new Linux VM, it gets assigned a new Virtual Ethernet Adapter. This new adapter would be assigned a newly generated MAC address, and some files in our Linux VM need to be modified before we can use it. Virt-Sysprep allows us to unconfigure or reset a Linux VM configuration.
+The reason why we would use virt-sysprep (or similar tools) is to automate most of the process after we clone a Linux VM to build new server. A good example is the MAC address, everytime we provision a new Linux VM, it gets assigned a new Virtual Ethernet Adapter. This new adapter would be assigned a newly generated MAC address, and some files in our Linux VM need to be modified before we can use it. Virt-Sysprep allows us to unconfigure or reset a Linux VM configuration, and this way deploy multiple systems based on one. The use of one tool for this purpose also helps keeping standard configurations across your enviroments, which also helps keeping your IT Infrastructure compliant. 
 
 ### Notes
 This Guide its based on RHEL 7.7
