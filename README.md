@@ -19,3 +19,18 @@ My recommendation is that you follow this document in a Test Enviroment, since V
 Backup or snapshots or both, make sure any Virtual Disk you prepare with virt-sysprep its backed up.
 
 Virt-Sysprep Official Documentantion recommends not running virt-sysprep as root. Make sure the Virtual Disk you running virt-sysprep on its owned by the user you are logged in as.
+
+### About the Enviroment
+I'm currently running RHEL 7.7 in a Virtual Box 6.0 VM which uses the Virtual Disk Image format, from a Windows 10 Host.
+I would have to get involved on this also, a Debian 10 VM thats also running on my Windows 10 Host.
+
+### About Virt-Sysprep
+Virt-Sysprep its used in two primary ways. See the following commands:
+```bash
+virt-sysprep [--options] -d domname
+virt-sysprep [--options] -a disk.img [-a disk.img ...]
+```
+
+#### Domain Name (KVM)
+Specify VM domain on KVM Host. If my hypervisor was KVM, I could use the following parameters passed to `virt-sysprep` to Sysprep the Disk Image of a VM running on the same host.
+#### Disk Image
