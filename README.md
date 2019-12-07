@@ -12,3 +12,10 @@ The reason why we would use virt-sysprep (or similar tools) is to automate most 
 
 ### Notes
 This Guide its based on RHEL 7.7
+
+### WARNING
+My recommendation is that you follow this document in a Test Enviroment, since Virt-Sysprep modifies files within your Linux VM Virtual Disk, and such changes could impact a production enviroment negatively.
+
+Backup or snapshots or both, make sure any Virtual Disk you prepare with virt-sysprep its backed up.
+
+Virt-Sysprep Official Documentantion recommends not running virt-sysprep as root. Make sure the Virtual Disk you running virt-sysprep on its owned by the user you are logged in as.
