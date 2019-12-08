@@ -33,4 +33,10 @@ virt-sysprep [--options] -a disk.img [-a disk.img ...]
 
 #### Domain Name (KVM)
 Specify VM domain on KVM Host. If my hypervisor was KVM, I could use the following parameters passed to `virt-sysprep` to Sysprep the Disk Image of a VM running on the same host.
+
+I wont dive into this option since it does not apply to us. We are on Virtual Box 6.0.
+
 #### Disk Image
+Specify Disk Image to run Virt-Sysprep on. Since we can use my RHEL 7.7 Virtual Disk Image in my Debian 10 VM (Sharing a folder from my Windows 10 Host), this is the way we are going to use Virt-Sysprep.
+
+### 
